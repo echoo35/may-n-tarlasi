@@ -1,0 +1,75 @@
+/* Genel sayfa stilini belirler */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Metin fontu Arial, Helvetica, ya da bir sans-serif fontu olarak ayarlanır. */
+    font-weight: bold; /* Metinlerin kalınlığı kalın (bold) olarak ayarlanır. */
+    text-align: center; /* Metinlerin sayfa ortasında hizalanması sağlanır. */
+}
+
+/* Oyun tahtası stilini belirler */
+#board {
+    width: 400px; /* Tahta genişliği 400 piksel olarak ayarlanır. */
+    height: 400px; /* Tahta yüksekliği 400 piksel olarak ayarlanır. */
+    border: 10px solid darkgray; /* Tahta çevresine 10 piksel kalınlığında koyu gri kenarlık eklenir. */
+    background-color: lightgray; /* Tahta arka plan rengi açık gri olarak ayarlanır. */
+    margin: 0 auto; /* Tahtanın sayfa içinde yatay olarak ortalanması sağlanır. */
+    display: flex; /* Flexbox modeli kullanılarak içeriklerin düzeni sağlanır. */
+    flex-wrap: wrap; /* İçeriklerin sığmaması durumunda sarma (wrap) yapılır. */
+}
+
+/* Oyun tahtasındaki karelerin stilini belirler */
+#board div {
+    width: 48px; /* Her karenin genişliği 48 piksel olarak ayarlanır. */
+    height: 48px; /* Her karenin yüksekliği 48 piksel olarak ayarlanır. */
+    border: 1px solid whitesmoke; /* Her kareye 1 piksel kalınlığında beyaz dış kenarlık eklenir. */
+    font-size: 30px; /* Metin boyutu 30 piksel olarak ayarlanır. */
+    display: flex; /* Flexbox modeli kullanılarak içeriklerin düzeni sağlanır. */
+    justify-content: center; /* İçeriklerin yatayda ortalanması sağlanır. */
+    align-items: center; /* İçeriklerin dikeyde ortalanması sağlanır. */
+}
+
+/* Tıklanmış karelerin stilini belirler */
+.tile-clicked {
+    background-color: darkgrey; /* Tıklanmış karelerin arka plan rengi koyu gri olarak ayarlanır. */
+}
+
+/* Karelerdeki mayın sayılarına göre renklerin stilini belirler */
+.x1 {
+    color: blue; /* Bir mayın etrafındaki sayı 1 ise mavi renk atanır. */
+}
+
+.x2 {
+    color: green; /* Bir mayın etrafındaki sayı 2 ise yeşil renk atanır. */
+}
+
+.x3 {
+    color: red; /* Bir mayın etrafındaki sayı 3 ise kırmızı renk atanır. */
+}
+
+.x4 {
+    color: navy; /* Bir mayın etrafındaki sayı 4 ise lacivert renk atanır. */
+}
+
+.x5 {
+    color: brown; /* Bir mayın etrafındaki sayı 5 ise kahverengi renk atanır. */
+}
+
+.x6 {
+    color: teal; /* Bir mayın etrafındaki sayı 6 ise teal renk atanır. */
+}
+
+.x7 {
+    color: black; /* Bir mayın etrafındaki sayı 7 ise siyah renk atanır. */
+}
+
+.x8 {
+    color: gray; /* Bir mayın etrafındaki sayı 8 ise gri renk atanır. */
+}
+
+/* Bayrak modunu etkinleştiren düğmenin stilini belirler */
+#flag-button {
+    width: 100px; /* Düğmenin genişliği 100 piksel olarak ayarlanır. */
+    height: 50px; /* Düğmenin yüksekliği 50 piksel olarak ayarlanır. */
+    font-size: 30px; /* Düğmenin metin boyutu 30 piksel olarak ayarlanır. */
+    background-color: lightgray; /* Düğmenin arka plan rengi açık gri olarak ayarlanır. */
+    border: none; /* Düğmenin kenarlık yoktur. */
+}
